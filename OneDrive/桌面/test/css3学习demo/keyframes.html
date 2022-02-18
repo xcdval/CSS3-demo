@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        .rect{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            animation: mymove 2s infinite;
+        }
+        @keyframes mymove{
+            /* from {top: 0;left: 20%;}
+            to {top: 0;left: 80%;} */
+            0% {top: 0;left: 20%;}
+            25% {top: 0;left: 80%;}
+            50% {top: 80%;left: 80%;}
+            75% {top: 80%;left: 20%;}
+            100% {top: 0%;left: 20%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="rect"></div>
+</body>
+</html>

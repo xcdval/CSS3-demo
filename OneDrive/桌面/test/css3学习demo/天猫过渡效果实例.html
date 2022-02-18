@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天猫过渡效果实例</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .ceng{
+            width: 260px;
+            /* height: 260px; */
+            margin: 10px auto;
+            list-style: none;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+        .m_title{
+            overflow: hidden;
+        }
+        img{
+            position: relative;
+            padding: 30px;
+        }
+        img::before{
+            content:'';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: #eee;
+            border-radius: 50%;
+            z-index: -1;
+            left: 35px;
+            top: 10px;
+        }
+        img{
+            /* transform: scale(1); */
+            transition: all 0.5s;
+        }
+        li:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <div class="ceng">
+                    <div>
+                    <img src="https://gw.alicdn.com/bao/uploaded/i3/6000000007345/O1CN01aqJ5Dd2483qBFBfj6_!!6000000007345-0-picassoopen.jpg_220x10000Q75.jpg_.webp">
+                   </div>
+                <div class="m_title">卫龙辣条手撕大辣片豆皮118g麻辣味网红小吃休闲零食品凑单聚餐</div>
+                <div class="m_content">￥11.9</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
